@@ -12,7 +12,7 @@ public class EmployeeController {
 
     private static final String url = "http://dummy.restapiexample.com/api/v1/";
 
-    @GetMapping("/employee")
+    @GetMapping("/employees")
     public EmployeesResponse getAll() {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url + "employees", EmployeesResponse.class);
